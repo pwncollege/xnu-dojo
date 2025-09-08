@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# wow, so setting the flag as root persisted, so we need to clean up before we allow them to view logs
+rm -rf /private/var/db/diagnostics/Persist/*
+
+mkdir -p /usr/local/bin
+cp /usr/bin/log /usr/local/bin/log
+chown root:wheel /usr/local/bin/log
+chmod u+s /usr/local/bin/log

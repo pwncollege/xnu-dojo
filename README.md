@@ -1,5 +1,4 @@
-# Example Import Dojo
+# XNU Dojo
 
-This repositories features an example dojo, which imports from [pwncollege/example-dojo](https://github.com/pwncollege/example-dojo).
+Content developed as part of the [ASU CSE 598 AVR Fall 2024](https://pwn.college/cse598-avr-f2024/).
 
-The dojo is defined by [dojo.yml](./dojo.yml).
