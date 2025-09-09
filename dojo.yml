@@ -298,6 +298,10 @@ modules:
     - id: pac-brute-force-a
       name: "Brute Force IA Key"
       image: mac:macos-12.5-pac-brute-force-a-key
+      transfer:
+        dojo: cse598-avr-f2024
+        module: xnu-pac
+        challenge: pac-brute-force-a
       description: |
         Get the flag using the provided functionality.
 
