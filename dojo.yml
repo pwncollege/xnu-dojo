@@ -3,6 +3,8 @@ id: xnu
 name: XNU Dojo
 
 type: public
+award:
+  emoji: 🍎
 
 modules:
 
@@ -38,10 +40,6 @@ modules:
   challenges:
     - id: hello-world
       name: hello-world
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: hello-world
       description: |
         Hello World!
 
@@ -49,163 +47,91 @@ modules:
 
     - id: send-any-port-0
       name: Send Any to Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-any-port-0
       description: |
         For this level, just send any message to this port.
 
     - id: send-any-port-1
       name: Send Any to Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-any-port-1
       description: |
         No debug output this time.
 
     - id: send-value-to-port-0
       name: Send Specific Value to Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-value-to-port-0
       description: |
         Now send a specific inline value to this port.
 
     - id: send-value-to-port-1
       name: Send Specific Value to Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-value-to-port-1
       description: |
         No debug output this time.
 
     - id: send-any-ool-port-0
       name: Send any OOL message to Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-any-ool-port-0
       description: |
         Send any OOL message to a port.
 
     - id: send-any-ool-port-1
       name: Send any OOL message to Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-any-ool-port-1
       description: |
         No debug output this time.
 
     - id: send-value-to-ool-port-0
       name: Send a specific value in OOL message to Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-value-to-ool-port-0
       description: |
         Send an OOL message with a specific value to this port.
 
     - id: send-value-to-ool-port-1
       name: Send a specific value in OOL message to Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-value-to-ool-port-1
       description: |
         No debug output this time.
 
     - id: receive-inline-flag-0
       name: Receive the inline flag on a Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: receive-inline-flag-0
       description: |
         Receive the flag inline on a port.
 
     - id: receive-inline-flag-1
       name: Receive the inline flag on a Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: receive-inline-flag-1
       description: |
         No debug output this time.
 
     - id: receive-ool-flag-0
       name: Receive the OOL flag on a Port-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: receive-ool-flag-0
       description: |
         Receive the flag OOL on a port.
 
     - id: receive-ool-flag-1
       name: Receive the OOL flag on a Port-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: receive-ool-flag-1
       description: |
         No debug output this time.
 
     - id: send-flag-back-inline-0
       name: Send flag back inline-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-flag-back-inline-0
       description: |
         Send a message and we'll send back the inline flag.
 
     - id: send-flag-back-inline-1
       name: Send flag back inline-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-flag-back-inline-1
       description: |
         No debug output this time
 
     - id: send-flag-back-ool-0
       name: Send flag back OOL-0
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-flag-back-ool-0
       description: |
         Send a message and we'll send back the OOL flag.
 
     - id: send-flag-back-ool-1
       name: Send flag back OOL-1
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: send-flag-back-ool-1
       description: |
         No debug output this time
 
     - id: exploit-me-inline
       name: Exploit Me Inline
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: exploit-me-inline
       description: |
         Pop it
 
     - id: exploit-me-ool
       name: Exploit Me OOL
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ipc
-        challenge: exploit-me-ool
       description: |
         Pop it
 
@@ -233,46 +159,26 @@ modules:
   challenges:
     - id: task-port-read
       name: "Task Port: Read"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ports
-        challenge: task-port-read
       description: |
         Use the task port to read the flag from memory.
 
     - id: task-port-write
       name: "Task Port: Write"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ports
-        challenge: task-port-write
       description: |
         Use the task port to write to memory to get the flag.
 
     - id: task-port-flag-in-mem
       name: "Task Port: Flag in Memory"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ports
-        challenge: task-port-flag-in-mem
       description: |
         Use the task port to find the flag in memory.
 
     - id: task-port
       name: Task Port
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ports
-        challenge: task-port
       description: |
         Use the task port to pop the binary.
 
     - id: exception-port
       name: Exception Port
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-mach-ports
-        challenge: exception-port
       description: |
         Use the exception port to pop the binary.
 
@@ -302,10 +208,6 @@ modules:
   challenges:
     - id: iokit-connect
       name: "Connect to me"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-iokit
-        challenge: iokit-connect
       description: |
         Connect to io.oooverflow.IPwnKit, and the flag is given in the logs.
 
@@ -315,10 +217,6 @@ modules:
 
     - id: iokit-open-user-client
       name: "Talk to my client"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-iokit
-        challenge: iokit-open-user-client
       description: |
         Correctly open a connect to the user client to get the flag.
 
@@ -326,10 +224,6 @@ modules:
 
     - id: iokit-say-hi
       name: "Say Hi"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-iokit
-        challenge: iokit-say-hi
       description: |
         Use the user client to say hi, and the driver will give you the flag.
 
@@ -337,10 +231,6 @@ modules:
 
     - id: iokit-read-num
       name: "Just read the flag"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-iokit
-        challenge: iokit-read-num
       description: |
         Now we're getting to the good stuff. You can now call ReadNum, how can you use this to get the flag?
         
@@ -348,10 +238,6 @@ modules:
 
     - id: iokit-write-num
       name: "Write Num To Win"
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-iokit
-        challenge: iokit-write-num
       description: |
         Well, the flag isn't in the driver anymore, but you can call WriteNum. How can you use this to get the flag?
 
@@ -392,10 +278,6 @@ modules:
     - id: pac-direct-gadget-a
       name: "Direct Gadget IA Key"
       image: mac:macos-12.5-pac-direct-gadget-a-key
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-pac
-        challenge: pac-direct-gadget-a
       description: |
         Get the flag using the provided functionality.
 
@@ -406,10 +288,6 @@ modules:
     - id: pac-sub-values-a
       name: "Substitute Values IA Key"
       image: mac:macos-12.5-pac-sub-values-a-key
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-pac
-        challenge: pac-sub-values-a
       description: |
         Get the flag using the provided functionality.
 
@@ -420,10 +298,6 @@ modules:
     - id: pac-brute-force-a
       name: "Brute Force IA Key"
       image: mac:macos-12.5-pac-brute-force-a-key
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-pac
-        challenge: pac-brute-force-a
       description: |
         Get the flag using the provided functionality.
 
@@ -434,10 +308,6 @@ modules:
     - id: pac-signing-gadget-a
       name: "Signing Gadget IA Key"
       image: mac:macos-12.5-pac-signing-gadget-a-key
-      transfer:
-        dojo: cse598-avr-f2024
-        module: xnu-pac
-        challenge: pac-signing-gadget-a
       description: |
         Get the flag using the provided functionality.
 
